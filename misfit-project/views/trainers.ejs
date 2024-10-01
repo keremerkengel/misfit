@@ -1,0 +1,10 @@
+<h1>Our Trainers</h1>
+<div>
+  <% trainers.forEach(trainer => { %>
+    <div>
+      <h2><%= trainer.name %></h2>
+      <p><%= trainer.bio %></p>
+      <a href="/trainers/<%= trainer._id %>">View Workouts</a>
+    </div>
+  <% }); %>
+</div>
